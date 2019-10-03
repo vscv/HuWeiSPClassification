@@ -13,6 +13,8 @@ sudo docker run -v /$HOST/TF_io:/home/TF_io lswdokcer/tf_docker_v3
 
 # 客製化需求
 ## 安裝Docker環境
+DOCKER Env
+
     $ sudo apt-get update
     $ sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
     $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -

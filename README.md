@@ -14,6 +14,9 @@ Check and send new images to tf inception v3 model, then output the label.
 * TF_io: 固定名稱，存放新收影像檔與辨識結果
 * lswdokcer: 為docker hub存放空間之名稱(若客製化後docker請改成您個人的)
 
+
+***
+
 # 客製化需求
 若僅需開啟現有辨識服務，有客製化需求才參考下方教學。
 
@@ -59,6 +62,7 @@ $TF_io/主資料夾內容結構如下：
 * 由Dockerfile建立container image
 
     $ sudo docker build -t tf_docker_v3  . 
+
 
 * 設定該image版本號
 

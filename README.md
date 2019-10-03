@@ -57,7 +57,7 @@ $TF_io/主資料夾內容結構如下：
 
 
 ## 客製化docker容器
-可使用原始Dockerfile檔案，image版本號與repo帳號依照需要修改，例如：tf_docker_v3 -> tf_hw_mod_v1
+*可使用原始Dockerfile檔案，image版本號與repo帳號依照需要修改，例如：tf_docker_v3 --> tf_hw_mod_v1, lswdokcer --> {$your_docker_repo}*
 
 * 由Dockerfile建立container image
 
@@ -66,7 +66,7 @@ $TF_io/主資料夾內容結構如下：
 
 * 設定該image版本號
 
-    `$ sudo docker tag tf_docker_v3 {$your_docker_repo}/tf_docker_v3:latest`
+    `$ sudo docker tag tf_docker_v3 lswdokcer/tf_docker_v3:latest`
     
 * 登入您個人的docker帳號
 

@@ -1,17 +1,22 @@
 # HuWeiSPClassification
+
 Check and send new images to tf inception v3 model, then output the label.
 
 
 # 使用方法
-## 執行辨識docker
-sudo docker run -v /$HOST/TF_io:/home/TF_io lswdokcer/tf_docker_v3
+## 執行辨識
+僅需在伺服器端輸入下列指令
+
+    sudo docker run -v /$HOST/TF_io:/home/TF_io lswdokcer/tf_docker_v3
 
 * tf_docker_v3: v[] 為版本號
 * $HOST：請將/$HOST替換成您主機上的資料夾路徑
 * TF_io: 固定名稱，存放新收影像檔與辨識結果
-* lswdokcer: 為docker hub存放空間之名稱
+* lswdokcer: 為docker hub存放空間之名稱(若客製化後docker請改成您個人的)
 
 # 客製化需求
+若僅需開啟現有辨識服務，有客製化需求才參考下方教學。
+
 ## 安裝Docker環境
 DOCKER Env
 
@@ -44,6 +49,12 @@ $TF_io/主資料夾內容結構如下：
     009052live.cfg
     ...
 
-## 客製化docker容器
-
 ## 功能增加與修改
+
+## 客製化docker容器
+    $ sudo docker build -t tf_docker_v3  . (由Dockerfile建立 image)
+    $ sudo docker tag tf_docker_v3 lswdokcer/tf_docker_v3:latest
+    $ sudo docker login
+    $ sudo docker push lswdokcer/tf_docker_v3
+
+

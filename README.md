@@ -34,6 +34,7 @@ Check version of docker by:
 2. 使用前請先確認每個鏡頭的ROI設定檔(00xxxxxlive.cfg)已放入host/name/$TF_io_root_dir/主資料夾中。當container 運行時，會自動將新加入TF_io/in/中的影像進行辨識，其中水域偵測需要依據每個鏡頭的ROI設定檔(00xxxxxlive.cfg)來進行處理，最後才輸出至TF_io/out/中。
 
 $TF_io_root_dir主資料夾內容結構如下：
+
     in/
     out/
     001140live.cfg

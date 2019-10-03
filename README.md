@@ -61,19 +61,19 @@ $TF_io/主資料夾內容結構如下：
 
 * 由Dockerfile建立container image
 
-    $ sudo docker build -t tf_docker_v3  . 
+    `$ sudo docker build -t tf_docker_v3  . `
 
 
-*設定該image版本號*
+* 設定該image版本號
 
-    $ sudo docker tag tf_docker_v3 {$your_docker_repo}/tf_docker_v3:latest
+    `$ sudo docker tag tf_docker_v3 {$your_docker_repo}/tf_docker_v3:latest`
     
 * 登入您個人的docker帳號
 
-    $ sudo docker login
+    `$ sudo docker login`
 
 * 將新的docker image上傳至repository
 
-    $ sudo docker push lswdokcer/tf_docker_v3
+    `$ sudo docker push lswdokcer/tf_docker_v3`
 
 

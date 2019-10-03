@@ -23,7 +23,8 @@ INSTALL DOCKER
     $ sudo apt-get update
     $ sudo apt-get install docker-ce (for Docker CE)
 
-Check version of docker by:  
+Check version of docker by:
+
     $ apt-cache madison docker-ce
 
 

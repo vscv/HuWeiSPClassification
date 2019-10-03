@@ -75,6 +75,10 @@ $TF_io/主資料夾內容結構如下：
     pyinstaller -D -F -n RG_BGIS.exe -c RG_GBIS.py
     mv *.exe TF_run/
 
+## 更新模型
+請在Tensorflow 1.13環境重新訓練Inception v3
+
+`$ python /SRC/retrain.py --image_dir /{your_new_training_set}/ --print_misclassified_test_images`
 
 ## 客製化docker容器
 *可使用原始Dockerfile檔案，image版本號與repo帳號依照需要修改，例如：tf_docker_v3 --> tf_hw_mod_v1, lswdokcer --> {$your_docker_repo}*

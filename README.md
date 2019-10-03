@@ -64,7 +64,7 @@ $TF_io/主資料夾內容結構如下：
     $ sudo docker build -t tf_docker_v3  . 
 
 
-* 設定該image版本號
+*設定該image版本號*
 
     $ sudo docker tag tf_docker_v3 {$your_docker_repo}/tf_docker_v3:latest
     

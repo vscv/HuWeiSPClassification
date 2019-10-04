@@ -117,10 +117,25 @@ $TF_io/主資料夾內容結構如下：
 ## 客製化docker容器
 *可使用原始Dockerfile檔案，image版本號與repo帳號依照需要修改，例如：tf_docker_v3 --> tf_hw_mod_v1, lswdokcer --> {$your_docker_repo}*
 
+
+*修改Dockerfile
+
+    $ vim Dockerfile
+    
+  依照需求修改設定
+  
+    # TF run on Docker NCHC 2018-11-05 
+    FROM ubuntu:16.04
+    RUN apt-get -y update && apt-get install -y python3-tk
+    COPY TF_run /home/TF_run
+    WORKDIR /home/TF_run
+    CMD ./Check.exe /home/TF_io/
+    RUN echo "tf_docker.v2 2018-11-05"
+    RUN echo "***** DL@NCHC *****"
+
 * 由Dockerfile建立container image
 
     `$ sudo docker build -t tf_docker_v3  . `
-
 
 * 設定該image版本號
 

@@ -1,6 +1,6 @@
 # HuWeiSPClassification
 
-Check and send new images to tf inception v3 model that train on HuWei dataset, then output the label.
+Check and send new images to tf inception v3 model that train on HuWei dataset.
 
 # 使用方法
 ## 執行辨識
@@ -8,7 +8,7 @@ Check and send new images to tf inception v3 model that train on HuWei dataset, 
 
     $ sudo docker run -v /$HOST/TF_io:/home/TF_io lswdokcer/tf_docker_v3
 
-* $HOST：請將/$HOST替換成您主機上的資料夾路徑
+* $HOST：請將$HOST替換成您主機上的資料夾路徑
 * TF_io: 固定名稱，存放新收影像檔與辨識結果
 * lswdokcer: 為docker hub存放空間之名稱(若客製化後docker請改成您個人的空間)
 * tf_docker_v3: v[] 為版本號
@@ -18,7 +18,7 @@ Check and send new images to tf inception v3 model that train on HuWei dataset, 
 ***
 
 # 客製化需求
-若僅需開啟現有辨識服務不需進行下列步驟，若有客製化需求才參考以下步驟。
+若有客製化需求才參考以下步驟。
 
 ## 安裝Docker環境
 DOCKER Env

@@ -38,8 +38,40 @@ Check version of docker by:
 
     $ apt-cache madison docker-ce
 
+If you want same version : 
 
- ## 辨識模組的Docker image使用
+    $sudo apt-get install docker-ce=<VERSION>
+
+Verify that Docker CE : 
+    
+    $ sudo docker run hello-world
+
+How show all containers on the system: 
+
+    $ sudo docker ps -a
+
+To stop a container:
+
+    $ sudo docker stop $Name
+    
+To show only running containers use:
+
+    $ docker ps 
+    
+To show all containers use:
+
+    $ docker ps –a
+    
+To stop/start docker service: 
+
+    $ sudo service docker stop
+
+Lists all the images on your local system:
+
+    $ docker images
+
+
+## 辨識模組的Docker image使用
 
 ### TF_io
 1. 若host主機已安裝好docker engine，另外還需建立輸出影像與輸出結果的資料夾。例如：host主機帳號下建立/host/name/$TF_io_root_dir/TF_io主資料夾，並在其下建立/in與/out資料夾。

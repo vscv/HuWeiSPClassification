@@ -103,7 +103,7 @@ $TF_io/主資料夾內容結構如下：
     $ pyinstaller -D -F -n Check.exe -c Check.py
     $ pyinstaller -D -F -n classify.exe -c classify.py 
     $ pyinstaller -D -F -n RG.exe -c RG.py
-    $ pyinstaller -D -F -n RG_BGIS.exe -c RG_GBIS.py
+    $ pyinstaller -D -F -n RG_GBIS.exe -c RG_GBIS.py
     $ mv *.exe TF_run/
 
 ## 更新模型

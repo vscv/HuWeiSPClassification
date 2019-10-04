@@ -1,0 +1,5 @@
+n00	unclear
+n01	rain
+n02	normal
+n03	nt
+n04	nf

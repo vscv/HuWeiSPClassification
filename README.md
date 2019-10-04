@@ -18,7 +18,7 @@ Check and send new images to tf inception v3 model that train on HuWei dataset, 
 ***
 
 # 客製化需求
-若僅需開啟現有辨識服務，有客製化需求才參考下方教學。
+若僅需開啟現有辨識服務不需進行下列步驟，若有客製化需求才參考以下步驟。
 
 ## 安裝Docker環境
 DOCKER Env

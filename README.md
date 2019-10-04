@@ -98,7 +98,7 @@ $TF_io/主資料夾內容結構如下：
        RG.exe
      
 ## 功能增加與修改
-請至/SRC/中修改個別的Py檔案，完成後再使用pyinstal封裝，並取代原本的TF_run/*.exe
+請至/SRC/中修改個別的Py檔案，再使用pyinstaller封裝，並取代原本的TF_run/*.exe。
 
     $ pyinstaller -D -F -n Check.exe -c Check.py
     $ pyinstaller -D -F -n classify.exe -c classify.py 

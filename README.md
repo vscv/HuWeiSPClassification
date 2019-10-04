@@ -122,24 +122,23 @@ $TF_io/主資料夾內容結構如下：
 
     $ vim Dockerfile
     
-  依照需求修改設定
+  依照需求修改設定，以ubuntu1604為系統基礎，由於功能已由pyinstaller封裝，因此docker image中不需再安裝任何套件。
   
-    # TF run on Docker NCHC 2018-11-05 
+    # TF run on Docker NCHC 2019-10-05 
     FROM ubuntu:16.04
     RUN apt-get -y update && apt-get install -y python3-tk
     COPY TF_run /home/TF_run
     WORKDIR /home/TF_run
     CMD ./Check.exe /home/TF_io/
-    RUN echo "tf_docker.v2 2018-11-05"
-    RUN echo "***** DL@NCHC *****"
+    RUN echo "tf_hw_mod_v1 2019-10-05"
 
 * 由Dockerfile建立container image
 
-    `$ sudo docker build -t tf_docker_v3  . `
+    `$ sudo docker build -t tf_hw_mod_v1 . `
 
 * 設定該image版本號
 
-    `$ sudo docker tag tf_docker_v3 lswdokcer/tf_docker_v3:latest`
+    `$ sudo docker tag tf_hw_mod_v1 lswdokcer/tf_hw_mod_v1:latest`
     
 * 登入您個人的docker帳號
 
@@ -147,6 +146,9 @@ $TF_io/主資料夾內容結構如下：
 
 * 將新的docker image上傳至repository
 
-    `$ sudo docker push lswdokcer/tf_docker_v3`
+    `$ sudo docker push lswdokcer/tf_hw_mod_v1`
 
-
+* 運行新的docker服務
+    
+    `$ sudo docker run -v /$HOST/TF_io:/home/TF_io lswdokcer/tf_hw_mod_v1`
+    

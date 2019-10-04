@@ -1,4 +1,6 @@
 #!/bin/bash
+# If MacOS X switch to zsh, shebang no long need.
+
 
 #002051live
 ./classify.exe --image_file ../002051live/2017/03/13/002051live_201703131050.jpg hw_confg/cam_roi_001.txt --model_dir hw_model

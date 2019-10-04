@@ -6,7 +6,7 @@ Check and send new images to tf inception v3 model that train on HuWei dataset, 
 ## 執行辨識
 僅需在伺服器端輸入下列指令
 
-    sudo docker run -v /$HOST/TF_io:/home/TF_io lswdokcer/tf_docker_v3
+    $ sudo docker run -v /$HOST/TF_io:/home/TF_io lswdokcer/tf_docker_v3
 
 * $HOST：請將/$HOST替換成您主機上的資料夾路徑
 * TF_io: 固定名稱，存放新收影像檔與辨識結果
@@ -68,16 +68,17 @@ $TF_io/主資料夾內容結構如下：
 ## 功能增加與修改
 請至/SRC/中修改個別的Py檔案，完成後再使用pyinstal封裝，並取代原本的TF_run/*.exe
 
-    pyinstaller -D -F -n Check.exe -c Check.py
-    pyinstaller -D -F -n classify.exe -c classify.py 
-    pyinstaller -D -F -n RG.exe -c RG.py
-    pyinstaller -D -F -n RG_BGIS.exe -c RG_GBIS.py
-    mv *.exe TF_run/
+    $ pyinstaller -D -F -n Check.exe -c Check.py
+    $ pyinstaller -D -F -n classify.exe -c classify.py 
+    $ pyinstaller -D -F -n RG.exe -c RG.py
+    $ pyinstaller -D -F -n RG_BGIS.exe -c RG_GBIS.py
+    $ mv *.exe TF_run/
 
 ## 更新模型
 請在Tensorflow 1.13環境重新訓練Inception v3，並將output_graph_HW.pb取代/TF_run/how_model/舊模型。
 
 `$ python /SRC/retrain.py --image_dir /{your_new_training_set}/ --print_misclassified_test_images`
+
 `$ mv /tmp/output_graph.pb /{your_TF_run/hw_model/}/output_graph_HW.pb`
 
 

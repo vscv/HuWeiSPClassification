@@ -157,8 +157,9 @@ $TF_io/主資料夾內容結構如下：
 
 ![Alt text](https://github.com/vscv/HuWeiSPClassification/blob/master/SRC/DL_%E6%99%BA%E6%85%A7%E5%9C%92%E5%8D%80%E8%B7%AF%E9%9D%A2%E7%A9%8D%E6%B7%B9%E6%B0%B4%E5%81%B5%E6%B8%AC_TF_io_out_%E8%BC%B8%E5%87%BA%E8%B3%87%E6%96%99%E8%AA%AA%E6%98%8E.jpg)
 
-inf:輸出各類別機率分數
-jpg:原始影像
-\_cntp_txt:輪廓點座標(Red)(可重新繪圖使用)
-\_roi_seg_.png:套疊原始影像、虛擬警戒點、水域輪廓
+* inf:輸出各類別機率分數
+* jpg:原始影像
+* \_cntp_txt:輪廓點座標(Red)(可重新繪圖使用)
+* \_roi_seg_.png:套疊原始影像、虛擬警戒點、水域輪廓
+
 ***

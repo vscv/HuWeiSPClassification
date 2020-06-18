@@ -152,6 +152,8 @@ $TF_io/主資料夾內容結構如下：
     
     `$ sudo docker run -v /$HOST/TF_io:/home/TF_io lswdokcer/tf_hw_mod_v1`
     
+ 
+ 
 ***
 # TF_io/out/ 輸出資料說明
 
@@ -161,5 +163,6 @@ $TF_io/主資料夾內容結構如下：
 * jpg:原始影像
 * \_cntp_txt:輪廓點座標(Red)(可重新繪圖使用)
 * \_roi_seg_.png:套疊原始影像、虛擬警戒點、水域輪廓
+
 
 ***
